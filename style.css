@@ -81,103 +81,6 @@ a{
     display: block;
     clear: both;
 }
-@media screen and (max-width: 668px) {
-        
-   .navbar{
-       padding: 0 20px;
-       text-align: center;
-       line-height: 75px;
-   }
-    
-    
-    .nav-logo{
-        width: calc(100% - 120px);
-        text-align: center;
-        display: inline-block;
-        float: left;
-        
-    }
-    .nav-logo img{
-        width: 45%;
-    }
-    .navbar ul{
-       display: none;
-    }
-    .navbar ul li{
-        display: block;
-    }
-    .navbar .btn{
-        display: none;
-        
-    }
-    .navbar .menu-btn i{
-        width: 60px;
-        height: auto;
-        color: #3c3c3b;
-        font-size: 25px;
-        cursor: pointer;
-        float: left;
-        display: inline-block;
-        line-height: 75px;
-    }
-    .navbar .call-mobile{ 
-        display: inline-block;
-        float: right;
-        width: 60px;
-        height: auto;
-        font-size: 25px;
-        
-    }
-}
-@media screen and (max-width: 940px) {
-        
-    .navbar{
-        padding: 0 25px;
-        text-align: center;
-        line-height: 75px;
-    }
-     
-     
-     .nav-logo{
-         width: calc(100% - 160px);
-         text-align: center;
-         display: inline-block;
-         float: left;
-         
-     }
-     .nav-logo img{
-         width: 40%;
-         margin-top: 12px;
-     }
-     .navbar ul{
-        display: none;
-     }
-     .navbar ul li{
-         display: block;
-     }
-     .navbar .btn{
-         display: none;
-         
-     }
-     .navbar .menu-btn i{
-         width: 80px;
-         height: auto;
-         color: #3c3c3b;
-         font-size: 30px;
-         cursor: pointer;
-         float: left;
-         display: inline-block;
-         line-height: 75px;
-     }
-     .navbar .call-mobile{ 
-         display: inline-block;
-         float: right;
-         width: 80px;
-         height: auto;
-         font-size: 30px;
-         
-     }
- }
 
   /* covid safe starts here  */
 h1{
@@ -443,3 +346,55 @@ footer p, small{
     text-align: right;
 }
 /* footer design starts here */
+
+/* responsive design starts here */
+
+@media screen and (max-width: 920px) {
+    /* navbar design starts here */
+    .navbar{
+        padding: 0 20px;
+        text-align: center;
+        line-height: 75px;
+    }
+     
+     
+     .nav-logo{
+         width: calc(100% - 120px);
+         text-align: center;
+         display: inline;
+         float: left;
+     }
+     .nav-logo img{
+         width: 55%;
+     }
+     .navbar ul{
+        display: none;
+     }
+     .navbar ul li{
+         display: block;
+     }
+     .navbar .btn{
+         display: none;   
+     }
+     .navbar .menu-btn i{
+         width: 60px;
+         height: auto;
+         color: #3c3c3b;
+         font-size: 25px;
+         cursor: pointer;
+         float: left;
+         display: inline;
+         line-height: 75px;
+     }
+     .navbar .call-mobile{ 
+         display: inline;
+         float: right;
+         width: 60px;
+         height: auto;
+         font-size: 25px;
+     }
+     /* navbar design starts here */
+
+     
+ }
+ /* responsive design ends here */
