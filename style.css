@@ -24,17 +24,21 @@ a{
     text-decoration: none;
 }
 
+h1{
+    color: white;
+    font-size: 3.5rem;
+}
+/*Start Navbar*/
 .navbar{
-    width: 100%;
+    width: 70%;
     height: 80px;
     /* background-color: #7e9c57; */
-    padding: 0 120px;
     line-height: 75px;
+    margin: 0 auto;
 }
 .nav-logo{
-    float: left;
-    width: 250px;
-    
+    width: 180px;
+    display: inline-block;
 }
 .nav-logo img{
     width: 100%;
@@ -47,7 +51,7 @@ a{
 .navbar ul li{
     margin-top: 3px;
     list-style: none;
-    display: inline-block;
+    float: left;
 }
 .navbar ul li a{
     padding: 0 15px;
@@ -61,17 +65,18 @@ a{
 }
 .navbar .btn{
     background-color: #04AA6D;
-    padding: 13px 20px;
+    padding: 15px 20px;
     border-radius: 5px;
     color: white;
     text-align: center;
 }
 
-.navbar .menu-btn i{
+.navbar .menu-btn{
     color: #3c3c3b;
     font-size: 20px;
     cursor: pointer;
     display: none;
+    width: 60px;
 }
 .call-mobile{ 
     display: none;
@@ -82,11 +87,7 @@ a{
     clear: both;
 }
 
-  /* covid safe starts here  */
-h1{
-    color: white;
-    font-size: 3.5rem;
-}
+
 .car-bg-image{
     position: relative;
     height: 680px;
@@ -97,6 +98,71 @@ h1{
     border-radius: 0 0 45% 25%;
     
 }
+
+@media screen and (max-width: 767px) {
+    /* navbar design starts here */
+    .navbar{
+        width: 100%;
+        padding: 0 20px;
+        text-align: center;
+        line-height: 75px;
+    }
+    .navbar .menu-btn {
+       display: inline;
+       text-align: left;
+       float: left;
+    }
+     
+     .nav-logo{
+         width: calc(100% - 120px);
+         text-align: center;
+         display: inline;
+        }
+        .nav-logo img{
+            width: 160px;
+        }
+
+        .navbar .call-mobile{ 
+            display: inline;
+            float: right;
+            text-align: right;
+            width: 60px;
+            height: auto;
+            font-size: 25px;
+        }
+     .navbar ul{
+        display: none;
+     }
+     .navbar ul li{
+         display: block;
+     }
+     .navbar .btn{
+         display: none;   
+     }
+
+    .car-bg-image{
+        height: 700px;
+    }
+
+ }
+
+@media screen and (max-width: 425px) {
+    .car-bg-image{
+        height: 425px;
+    }
+
+ }
+ 
+
+@media screen and (max-width: 320px) {
+    .car-bg-image{
+        height: 320px;
+    }
+
+}
+
+/*Start Navbar*/
+
 
 .covid-safe-contents{
     position: absolute;
@@ -311,10 +377,11 @@ h1{
 /* footer design starts here */
 footer{
     background-color: teal;
-    height: 250px;
+    height: 350px;
     text-align: center;
     margin-top: 50px;
     text-align: center;
+    padding: 50px;
 }
 footer p, small{
     color: white;
@@ -325,75 +392,64 @@ footer p, small{
     color: white;
     
 }
+.footer-contents p{
+    text-align: right;
+    margin-top: 10px;;
+}
 .footer-contents .contacts i{
     color: white;
     font-size: 1.4rem;
     margin: 10px;
 }
 .footer-image{
-    width: 50%;
-    float: left;
     text-align: left;
 }
 .footer-image img{
-    width: 45%;
+    width: 22%;
     height: auto;
-    margin-top: 80px;
 }
 .contacts{
-    width: 50%;
-    float: right;
     text-align: right;
+}
+
+footer .copyright{
+    margin-top: 115px;
 }
 /* footer design starts here */
 
 /* responsive design starts here */
 
-@media screen and (max-width: 920px) {
-    /* navbar design starts here */
-    .navbar{
-        padding: 0 20px;
-        text-align: center;
-        line-height: 75px;
+@media screen and (max-width: 767px) {
+   
+    .covid-safe-contents{
+        position: absolute;
+        left: 120px;
+        top: 120px;
+        
     }
-     
-     
-     .nav-logo{
-         width: calc(100% - 120px);
-         text-align: center;
-         display: inline;
-         float: left;
-     }
-     .nav-logo img{
-         width: 55%;
-     }
-     .navbar ul{
-        display: none;
-     }
-     .navbar ul li{
-         display: block;
-     }
-     .navbar .btn{
-         display: none;   
-     }
-     .navbar .menu-btn i{
-         width: 60px;
-         height: auto;
-         color: #3c3c3b;
-         font-size: 25px;
-         cursor: pointer;
-         float: left;
-         display: inline;
-         line-height: 75px;
-     }
-     .navbar .call-mobile{ 
-         display: inline;
-         float: right;
-         width: 60px;
-         height: auto;
-         font-size: 25px;
-     }
-     /* navbar design starts here */
+    .covid-safe-contents ul{
+        padding: 0;
+        margin-left: 20px;
+    }
+    .covid-safe-contents ul li{
+        color: white;
+        line-height: 30px;
+    }
+    .apply-btn{
+        border: none;
+        padding: 15px 60px;
+        font-size: 1.1rem;
+        border-radius: 5px;
+    }
+    
+    .covid-safe-car{
+        width: 450px;
+        height: auto;
+    }
+    .covid-safe-car img{
+        width: 100%;
+    }
+    /* covid safe design ends here */
 
      
  }
