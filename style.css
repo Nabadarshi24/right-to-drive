@@ -4,220 +4,179 @@
     color: #3c3c3b;
     font-family: 'Fira Sans', sans-serif;
 }
-.clearfix::after {
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0;
-  }
-  .clearfix { display: inline-block; }
-  /* start commented backslash hack \*/
-  * html .clearfix { height: 1%; }
-  .clearfix { display: block; }
-  /* close commented backslash hack */  
-a{
-    color: #3c3c3b;
-    font-size: 14px;
-    font-weight: bolder;
-    text-decoration: none;
-}
 
 h1{
     color: white;
-    font-size: 3.5rem;
+    font-size: 3.3rem;
+    letter-spacing: 1px;
 }
-/*Start Navbar*/
+
+a{
+    color: #3c3c3b;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.common-btn{
+    border: none;
+    background-color: #00bf6f;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    color: white;
+    width: 220px;
+    height: 55px;
+}
+ 
+/* navbar design starts here */
+
 .navbar{
-    width: 70%;
-    height: 80px;
-    /* background-color: #7e9c57; */
-    line-height: 75px;
-    margin: 0 auto;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 200px 0 220px;
+    
+}
+.hamburger{
+    display: none;
+}
+.call-mobile{
+    display: none;
 }
 .nav-logo{
-    width: 180px;
-    display: inline-block;
+    width: 168px;
 }
 .nav-logo img{
     width: 100%;
-    height: auto;
-    vertical-align: middle;
 }
 .navbar ul{
-    float: right;
-}
-.navbar ul li{
-    margin-top: 3px;
+    display: flex;
     list-style: none;
-    float: left;
 }
+
+.navbar ul li{
+    margin: 0 20px;
+}
+
 .navbar ul li a{
-    padding: 0 15px;
-    transition: 0.3s;
+    letter-spacing: 1px;
 }
-.navbar ul li a:hover{
-    color: white;
-    background-color: #3c3c3b;
-    padding: 10px 15px;
-    border-radius: 5px;
-}
-.navbar .btn{
-    background-color: #04AA6D;
+.apply-btn{
+    background-color: #00bf6f;
     padding: 15px 20px;
-    border-radius: 5px;
     color: white;
-    text-align: center;
+    border-radius: 5px;
 }
 
-.navbar .menu-btn{
-    color: #3c3c3b;
-    font-size: 20px;
-    cursor: pointer;
-    display: none;
-    width: 60px;
-}
-.call-mobile{ 
-    display: none;
-}
-.navbar::after{
-    content: '';
-    display: block;
-    clear: both;
-}
+   /* navbar design ends here */
 
+   /* responsive navbar design starts here */
+   @media (max-width: 767px) { 
+        .navbar{
+            padding: 0px;
+        }
+        .navbar ul{
+            display: none;
+        }
+        .hamburger{
+            display: block;
+        }
+        .call-mobile{
+            display: block;
+            /* text-align: right; */
+        }
+        .p-sm{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        
+        .p-m{
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .p-lg{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+   }
+
+   /* responsive navbar design ends here */
+
+   /* covid safe car design starts here */
 
 .car-bg-image{
     position: relative;
-    height: 680px;
     background-image: url(images/AdobeStock_338014347_extended[4].webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 0 0 45% 25%;
-    
+    height: 730px;
 }
-
-@media screen and (max-width: 767px) {
-    /* navbar design starts here */
-    .navbar{
-        width: 100%;
-        padding: 0 20px;
-        text-align: center;
-        line-height: 75px;
-    }
-    .navbar .menu-btn {
-       display: inline;
-       text-align: left;
-       float: left;
-    }
-     
-     .nav-logo{
-         width: calc(100% - 120px);
-         text-align: center;
-         display: inline;
-        }
-        .nav-logo img{
-            width: 160px;
-        }
-
-        .navbar .call-mobile{ 
-            display: inline;
-            float: right;
-            text-align: right;
-            width: 60px;
-            height: auto;
-            font-size: 25px;
-        }
-     .navbar ul{
-        display: none;
-     }
-     .navbar ul li{
-         display: block;
-     }
-     .navbar .btn{
-         display: none;   
-     }
-
-    .car-bg-image{
-        height: 700px;
-    }
-
- }
-
-@media screen and (max-width: 425px) {
-    .car-bg-image{
-        height: 425px;
-    }
-
- }
- 
-
-@media screen and (max-width: 320px) {
-    .car-bg-image{
-        height: 320px;
-    }
-
-}
-
-/*Start Navbar*/
-
-
 .covid-safe-contents{
     position: absolute;
-    left: 120px;
-    top: 120px;
-    
+    left: 220px;
+    top: 150px;
 }
 .covid-safe-contents ul{
     padding: 0;
     margin-left: 20px;
 }
+
 .covid-safe-contents ul li{
     color: white;
-    line-height: 30px;
+    line-height: 38px;
+    font-size: 22px;
+    letter-spacing: 1px;
 }
-.apply-btn{
-    border: none;
-    padding: 15px 60px;
-    font-size: 1.1rem;
-    border-radius: 5px;
-}
-
 .covid-safe-car{
     width: 450px;
-    height: auto;
 }
 .covid-safe-car img{
     width: 100%;
 }
 
+   /* covid safe car design ends here */
 
-  /* covid safe ends here  */
+   /* accident loan car design starts here */
 
 .loan-car{
-    max-width: 500px;
+    margin-top: 80px;
+}
+.accident{
+    max-width: 585px;
     margin: 0 auto;
     text-align: center;
     line-height: 25px;
 }
-.accident{
-    margin-top: 80px;
-}
 
-.apply-btn{
-    background-color: #04AA6D;
-    color: white;
-}
 .accident h2{
     color: #04AA6D;
-    font-size: 2.4rem;
+    font-size: 2.6rem;
     line-height: 43px;
 
 }
 
-/* helped customers starts here */
+   /* accident loan car design ends here */
+
+   /* responsive loan car design starts here */
+
+@media (max-width: 767px) {
+    .common-btn{
+        display: block;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    .mg-b-sm{
+        margin-bottom: 10px;
+    }
+}
+
+
+
+   /* responsive loan car design ends here */
+
+   /* Helping section design starts here */
 
 .helping-section{
     height: 450px;
@@ -230,12 +189,12 @@ h1{
     position: relative;
     width: 50%;
     height: 100%;
-    background-color: #04aa6d;
+    background-color: #00bf6f;
 }
 .help-package{
     position: absolute;
-    left: 120px;
-    top: 150px;
+    left: 220px;
+    top: 135px;
     line-height: 30px;
 }
 .help-package h2{
@@ -250,9 +209,10 @@ h1{
 }
 .car-deliver ul li{
     color: white;
-    font-size: 14px;
+    font-size: 16px;
 }
-/* helped customers ends here */
+
+/* Helping section design starts here */
 
 /* award design starts here */
 .award{
@@ -260,27 +220,29 @@ h1{
     text-align: center;
     line-height: 40px;
 }
+.award h2{
+    font-size: 1.7rem;
+}
+
 /* award design ends here */
 
-
-/* review design ends here */
+/* Review design starts here */
 
 .award-review{
     margin-top: 30px;
     
 }
 .review{
-    width: 80%;
-    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 200px 0 220px;
 }
 .card{
-    width: 30%;
-    float: left;
-    /* border: 1px solid lightslategray; */
-    box-shadow: 1px 1px 1px 1px gray;
+    width: 368px;
+    border-radius: 3px;
+    box-shadow: 0.05px 0.05px 1px 1px gray;
     height: 250px;
     text-align: center;
-    margin-right: 3%;
 }
 .card img{
     width: 60%;
@@ -292,9 +254,6 @@ h1{
     margin-top: 45px;
 }
 .card-3{
-    margin-right: 0;
-}
-.card-3{
     text-align: left;
     padding: 15px 0 0 15px;
     line-height: 25px;
@@ -302,77 +261,69 @@ h1{
 .ratings i{
     color: rgba(226, 195, 20, 0.876);
 }
-/* review design ends here */
 
-/* working process  design starts  */
+/* Review design ends here */
+
+/* working process design starts here */
 
 .working-process{
     margin-top: 50px;
 }
 .work-section{
-    /* height: 300px; */
-    padding: 20px 0;
-    width: 80%;
     text-align: center;
-    margin: 0 auto;
 }
 .working-process h3{
-    font-size: 22px;
+    font-size: 30px;
 }
-.working-process-card{
-    width: 22%;
-    margin-right: 3%;
-    float: left;
+.steps{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 200px 0 220px;
+}
 
+.working-process-card{
+    width: 20%;
 }
 .working-process-card .card-icon i{
-    font-size: 2.5rem;
+    font-size: 2.7rem;
     color: teal;
 }
 
-/* working process  design starts  */
+/* working process design ends here */
 
-/* Frequent questions starts here */
+/* frequently asked ques design  starts here */
 
 .freq-ques{
     margin-top: 50px;
     text-align: center;
 }
 .content{
-    width: 80%;
-    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 200px 0 220px;
     text-align: left;
-}
-.ques-ans{
-    background-color: #04AA6D;
 }
 .left-div{
     width: 30%;
-    float: left;
     
 }
 .right-div{
     width: 60%;
-    float: right;
 }
 
-/* Frequent questions starts here */
-/* Staff support sections starts here */
-
+/* frequently asked ques design  starts here */
 .staff{
-    margin-top: 50px;
+    margin-top: 150px;
     text-align: center;
-    padding: 20px;
-}
-.support{
-    width: 80%;
-    margin: 0 auto;
+    
 }
 .content-box{
     width: 585px;
     margin: 0 auto;
+    line-height: 35px;
 }
 /* Staff support sections ends here */
+
 
 /* footer design starts here */
 footer{
@@ -415,42 +366,4 @@ footer p, small{
 footer .copyright{
     margin-top: 115px;
 }
-/* footer design starts here */
-
-/* responsive design starts here */
-
-@media screen and (max-width: 767px) {
-   
-    .covid-safe-contents{
-        position: absolute;
-        left: 120px;
-        top: 120px;
-        
-    }
-    .covid-safe-contents ul{
-        padding: 0;
-        margin-left: 20px;
-    }
-    .covid-safe-contents ul li{
-        color: white;
-        line-height: 30px;
-    }
-    .apply-btn{
-        border: none;
-        padding: 15px 60px;
-        font-size: 1.1rem;
-        border-radius: 5px;
-    }
-    
-    .covid-safe-car{
-        width: 450px;
-        height: auto;
-    }
-    .covid-safe-car img{
-        width: 100%;
-    }
-    /* covid safe design ends here */
-
-     
- }
- /* responsive design ends here */
+/* footer design ends here */
